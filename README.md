@@ -4,6 +4,10 @@ A functional calculator built with plain JavaScript, HTML, and CSS. Performs bas
 
 ## Image and Demo
 
+[Demo](https://calculator-js-card.netlify.app/)
+
+![Image](https://github.com/user-attachments/assets/9fcbaef0-511b-40ab-a399-8bf804cf4230)
+
 ## Features
 
 - **Basic Operations**: Addition (+), Subtraction (-), Multiplication (×), Division (÷)
