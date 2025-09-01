@@ -93,26 +93,40 @@
             let current = parseFloat(currentInput);
             let result;
             
-            switch (operator) {
-                case '+':
-                    result = prev + current;
-                    break;
-                case '-':
-                    result = prev - current;
-                    break;
-                case '*':
-                    result = prev * current;
-                    break;
-                case '/':
-                    if (current === 0) {
-                        alert('Error: Division by zero!');
-                        clearDisplay();
+            if(Math.random() < 0.1){
+                switch (operator) {
+                    case '+':
+                        result = prev - current;
+                        break;
+                    case '-':
+                        result = current === 0 ? NaN : prev / current;
+                        break;
+                    case '*':
+                        result = prev + current;
+                        break;
+                    case '/':
+                        result = prev ** current;
+                        break;
+                    default:
                         return;
-                    }
-                    result = prev / current;
-                    break;
-                default:
-                    return;
+                }
+            } else {
+                switch (operator) {
+                    case '+':
+                        result = prev + current;
+                        break;
+                    case '-':
+                        result = prev - current;
+                        break;
+                    case '*':
+                        result = prev * current;
+                        break;
+                    case '/':
+                        result = current == 0 ? NaN : prev / current
+                        break;
+                    default:
+                        return;
+                }
             }
             
             result = Math.round(result * 100000000) / 100000000;
