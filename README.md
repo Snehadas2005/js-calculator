@@ -1,6 +1,6 @@
 # Simple JavaScript Calculator
 
-A functional calculator built with plain JavaScript, HTML, and CSS. Performs basic arithmetic operations with a clean, user-friendly interface.
+A faulty calculator built with plain JavaScript, HTML, and CSS. Performs basic arithmetic operations with a clean, user-friendly interface.
 
 ## Image and Demo
 
